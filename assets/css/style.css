@@ -1,0 +1,98 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    background-color: rgb(243, 244, 244);
+}
+header{
+    background-color: #25527b;
+    color: white;
+    grid-area: header;
+    place-items: center;
+    display: grid;
+    cursor: pointer;
+}
+h1{
+    font-size: 23px;
+}
+.container{
+    display: grid;
+    grid-template-areas: "header header"
+    "menu main"
+    "footer footer" ;
+    gap: 10px; 
+}
+.aside-bar{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    grid-area: menu;
+}
+
+footer{
+    background-color: rgb(235, 234, 234);
+    color: black;
+    height: 4rem;
+    grid-area: footer;
+    place-items: center;
+    display: grid;
+    font-size: 18px;
+}
+
+.listado{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+.count{
+    color: rgb(138, 138, 137);
+    margin-left: 5px
+}
+
+img.foto-producto{
+    display: block;
+    flex-direction: column;
+    height: 300px;
+    align-self: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: white;
+    margin: 2rem;
+}
+
+.grid{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Tres filas con la segunda el doble de alta que las demás */
+    grid-template-columns: 1fr 1fr 1fr;   /* Dos columnas de igual ancho */
+
+}
+.buy{
+    align-self: normal; 
+    background-color: #25527b;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+h4.nameproduct{
+    font-size: medium;
+    color: black;
+}
+p.price{
+    margin-bottom: 1rem;
+}
+
